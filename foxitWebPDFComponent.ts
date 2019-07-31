@@ -8,7 +8,6 @@ declare var window: any;
   styleUrls: ['./lib/UIExtension.css', "index.scss"]
 })
 export class FoxitWebPDFComponent {
-  @Input() file:File;
   @Input() fileUrl:string;
   @Input() password:string;
   @Input() fileName:string;
@@ -51,33 +50,37 @@ export class FoxitWebPDFComponent {
         pdfui.redraw();
     }
     if(this.fileUrl){
-      if(!this.fileName){
-        let pdfReg = new RegExp("[^/]+\.pdf");
-        let match = pdfReg.exec(this.fileUrl);
-        if(match){
-          this.fileName = match[0];
-        }
-      }
-      pdfui.openPDFByHttpRangeRequest({
-        range:{
-            url:this.fileUrl,
-        }
-        },{
-          password: this.password,
-          fileName: this.fileName
-        }
-      )
-    }else if(this.file){
-      pdfui.openPDFByFile(this.file, {
-        password: this.password,
-        fileName: this.fileName
-      })
+      this.openPDFByHttpRangeRequest(this.fileUrl, this.password, this.fileName);
     }
   }
   getPdfUi(){
     return this.pdfui;
   }
-  openFile(){
-
+  openFile(file:File, password:string = "", fileName:string = ""){
+    if(!fileName){
+      fileName = file.name;
+    }
+    this.pdfui.openPDFByFile(file, {
+      password: password,
+      fileName: fileName
+    })
+  }
+  openPDFByHttpRangeRequest(fileUrl:string, password:string = "", fileName:string = ""){
+    if(!fileName){
+      let pdfReg = new RegExp("[^/]+\.pdf");
+      let match = pdfReg.exec(this.fileUrl);
+      if(match){
+        fileName = match[0];
+      }
+    }
+    this.pdfui.openPDFByHttpRangeRequest({
+      range:{
+          url:fileUrl,
+      }
+      },{
+        password: password,
+        fileName: fileName
+      }
+    )
   }
 }
