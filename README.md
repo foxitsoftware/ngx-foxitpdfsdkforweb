@@ -1,4 +1,6 @@
 # ngx-foxitpdfsdkforweb
+This is Foxit pdf web sdk for Angular.
+
 ## Install
 npm install ngx-foxitpdfsdkforweb --save
 
