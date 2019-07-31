@@ -1,6 +1,6 @@
 {
     "name": "ngx-foxitpdfsdkforweb",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "foxitpdfsdkforweb",
     "main": "foxitWebPDFComponent.ts",
     "files": [
@@ -9,7 +9,7 @@
         "index.ts",
         "index.html"
     ],
-    "dependencies": {
+    "devDependencies": {
         "@angular/core": "~4.0.0"
     }
 }
