@@ -1,0 +1,11 @@
+{
+    "buttons": {
+        "title": "Video and Audio"
+    },
+    "dialog": {
+        "DeviceNotFoundError": "The device not found.",
+        "TrackStartError": "Microphone are already in use.",
+        "PermissionDeniedError": "Please check if your browser is allowed for a microphone.",
+        "BrowserNotSupported": "Browser not supported."
+    }
+}

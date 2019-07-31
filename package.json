@@ -1,0 +1,15 @@
+{
+    "name": "ngx-foxitpdfsdkforweb",
+    "version": "0.0.4",
+    "description": "foxitpdfsdkforweb",
+    "main": "foxitWebPDFComponent.ts",
+    "files": [
+        "lib",
+        "index.scss",
+        "index.ts",
+        "index.html"
+    ],
+    "dependencies": {
+        "@angular/core": "~4.0.0"
+    }
+}

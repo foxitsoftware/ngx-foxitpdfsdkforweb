@@ -1,0 +1,15 @@
+{
+    "buttons": {
+        "title": "文件属性"
+    },
+    "dialog": {
+        "title": "标题:",
+        "subject": "主题:",
+        "keywords": "关键字:",
+        "author": "作者:",
+        "producer": "制作程序:",
+        "creator": "应用程序:",
+        "createdDate": "创建时间:",
+        "modifiedDate": "修改时间:"
+    }
+}

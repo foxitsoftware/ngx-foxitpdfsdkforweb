@@ -1,0 +1,11 @@
+{
+    "buttons": {
+        "title": "音频视频"
+    },
+    "dialog": {
+        "DeviceNotFoundError": "没有麦克风。",
+        "TrackStartError": "麦克风被占用。",
+        "PermissionDeniedError": "请允许浏览器使用您的麦克风。",
+        "BrowserNotSupported": "浏览器不支持。"
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "dialog":{
+        "close":"Close",
+        "cancel":"Cancel",
+        "ok":"OK",
+        "printDialog":{
+            "title":"Print Settings",
+            "range": "Print range",
+            "all": "All",
+            "current":"Current Page",
+            "from":"Pages from",
+            "to": "to",
+            "assign": "Pages",
+            "comments": "Comments",
+            "printComments": "Print comments"
+        },
+        "printProcess": "In print"
+    },
+    "button-tooltip": {
+        "title": "Print"
+    }
+}

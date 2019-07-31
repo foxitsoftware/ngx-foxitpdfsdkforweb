@@ -1,0 +1,10 @@
+{
+    "button-tooltip": {
+        "title": "Export Form"
+    },
+    "export": {
+        "xml": "To a XML file",
+        "fdf": "To a FDF file",
+        "xfdf": "To a XFDF file"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "library": "MultiMediaAddon",
+    "css": ["index.css"],
+    "i18n": {
+        "sources": {
+            "en-US": "./locales/en-US.json",
+            "zh-CN": "./locales/zh-CN.json"
+        }
+    }
+}

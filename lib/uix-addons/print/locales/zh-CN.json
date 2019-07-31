@@ -1,0 +1,22 @@
+{
+    "dialog":{
+        "close":"关闭",
+        "cancel":"取消",
+        "ok":"确定",
+        "printDialog":{
+            "title":"打印设置",
+            "range": "打印范围",
+            "all": "全部页面",
+            "current":"当前页面",
+            "from":"从",
+            "to": "到",
+            "assign": "指定界面",
+            "comments": "注释",
+            "printComments": "打印注释"
+        },
+        "printProcess": "正在打印中"
+    },
+    "button-tooltip": {
+        "title": "打印"
+    }
+}

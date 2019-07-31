@@ -1,0 +1,17 @@
+{
+    "buttons": {
+        "title": "Redaction",
+        "redact_text": "Mark Text to Redact",
+        "redact_area": "Mark Area to Redact",
+        "redact_page": "Mark Page to Redact",
+        "redact_search": "Find Text",
+        "apply"      : "Apply"
+    },
+    "tooltips": {
+        "redaction": "Mark content for redaction",
+        "apply": "Apply to remove all marked content"
+    },
+    "dialog": {
+        "apply_alert": "This operation will permanently remove all content that has been marked to redact it. It cannot be undone."
+    }
+}

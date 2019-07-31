@@ -1,0 +1,17 @@
+{
+    "buttons": {
+        "title": "标识为密文",
+        "redact_text": "密文",
+        "redact_area": "区域",
+        "redact_page": "页面",
+        "redact_search": "搜索 & 标识密文",
+        "apply"      : "应用密文"
+    },
+    "tooltips": {
+        "redaction": "标记密文内容",
+        "apply": "移除所有标记的内容"
+    },
+    "dialog": {
+        "apply_alert": "该操作将会永久移除所有标记为密文的内容。无法撤销。"
+    }
+} 

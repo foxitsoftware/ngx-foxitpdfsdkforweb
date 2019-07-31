@@ -1,0 +1,9 @@
+{
+    "buttons": {
+        "eraser": "橡皮檫",
+        "show-dialog": "显示对话框"
+    },
+    "dialog": {
+        "title": "对话框标题"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "library": "EditGraphics",
+    "i18n": {
+        "sources": {
+            "zh-CN": "./locales/zh-CN.json",
+            "en-US": "./locales/en-US.json"
+        }
+    }
+}

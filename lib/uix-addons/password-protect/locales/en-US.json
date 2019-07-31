@@ -1,0 +1,9 @@
+{
+    "buttons": {
+        "title": "Password Protect",
+        "removeTitle": "Remove Protect",
+        "inputOwnerPassword": "Please input owner password:"
+    },
+    "dialog": {
+    }
+}

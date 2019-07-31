@@ -1,0 +1,10 @@
+{
+    "button-tooltip": {
+        "title": "导出表单"
+    },
+    "export": {
+        "xml": "XML格式",
+        "fdf": "FDF格式",
+        "xfdf": "XFDF格式"
+    }
+}
