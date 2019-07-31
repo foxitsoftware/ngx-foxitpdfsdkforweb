@@ -33,6 +33,10 @@ import { FoxitWebPDFComponent } from 'ngx-foxitpdfsdkforweb';
   ...
 })
 ```
+4 copy license-key.js to folder src/app and import.
+```
+import { licenseSN, licenseKey} from './license-key';
+```
 
 
 ## Use
