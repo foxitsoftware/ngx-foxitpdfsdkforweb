@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-// import { licenseSN, licenseKey} from './license-key';
 import * as UIExtension from './lib/UIExtension.full';
 
 declare var window: any;
@@ -9,13 +8,13 @@ declare var window: any;
   styleUrls: ['./lib/UIExtension.css', "index.scss"]
 })
 export class FoxitWebPDFComponent {
-  @Input() fileUrl:String;
   @Input() file:File;
-  @Input() password:String;
-  @Input() fileName:String;
+  @Input() fileUrl:string;
+  @Input() password:string;
+  @Input() fileName:string;
 
-  @Input() licenseSN:String;
-  @Input() licenseKey:String;
+  @Input() licenseSN:string;
+  @Input() licenseKey:string;
   pdfui:any;
   constructor() {
   }
@@ -25,7 +24,7 @@ export class FoxitWebPDFComponent {
     var PDFUI = UIExtension.PDFUI;
     var pdfui = new PDFUI({
         viewerOptions: {
-            libPath: './app/ngx-foxitwebpdf/lib/',
+            libPath: './node_modules/ngx-foxitpdfsdkforweb/lib/',
             jr: {
                 licenseSN: this.licenseSN,
                 licenseKey: this.licenseKey
@@ -34,16 +33,16 @@ export class FoxitWebPDFComponent {
         renderTo: '#ngx-foxit-pdf-ui',
         fragments: [],
         addons: [
-            './app/ngx-foxitwebpdf/lib/uix-addons/file-property',
-            './app/ngx-foxitwebpdf/lib/uix-addons/multi-media/',
-            './app/ngx-foxitwebpdf/lib/uix-addons/password-protect/',
-            './app/ngx-foxitwebpdf/lib/uix-addons/redaction/',
-            './app/ngx-foxitwebpdf/lib/uix-addons/path-objects/',
-            './app/ngx-foxitwebpdf/lib/uix-addons/print/',
-            './app/ngx-foxitwebpdf/lib/uix-addons/text-object',
-            './app/ngx-foxitwebpdf/lib/uix-addons/full-screen',
-            './app/ngx-foxitwebpdf/lib/uix-addons/import-form',
-            './app/ngx-foxitwebpdf/lib/uix-addons/export-form'
+            './node_modules/ngx-foxitpdfsdkforweb/lib/uix-addons/file-property',
+            './node_modules/ngx-foxitpdfsdkforweb/lib/uix-addons/multi-media/',
+            './node_modules/ngx-foxitpdfsdkforweb/lib/uix-addons/password-protect/',
+            './node_modules/ngx-foxitpdfsdkforweb/lib/uix-addons/redaction/',
+            './node_modules/ngx-foxitpdfsdkforweb/lib/uix-addons/path-objects/',
+            './node_modules/ngx-foxitpdfsdkforweb/lib/uix-addons/print/',
+            './node_modules/ngx-foxitpdfsdkforweb/lib/uix-addons/text-object',
+            './node_modules/ngx-foxitpdfsdkforweb/lib/uix-addons/full-screen',
+            './node_modules/ngx-foxitpdfsdkforweb/lib/uix-addons/import-form',
+            './node_modules/ngx-foxitpdfsdkforweb/lib/uix-addons/export-form'
         ]
     });
     this.pdfui = pdfui;
@@ -58,7 +57,6 @@ export class FoxitWebPDFComponent {
         if(match){
           this.fileName = match[0];
         }
-        this.fileName = this.fileUrl.substr()
       }
       pdfui.openPDFByHttpRangeRequest({
         range:{
