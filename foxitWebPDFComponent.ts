@@ -14,6 +14,7 @@ export class FoxitWebPDFComponent {
 
   @Input() licenseSN:string;
   @Input() licenseKey:string;
+  @Input() fontPath:string = 'https://font.connectedpdf.com/webfonts/';
   pdfui:any;
   constructor() {
   }
@@ -26,7 +27,8 @@ export class FoxitWebPDFComponent {
             libPath: './node_modules/ngx-foxitpdfsdkforweb/lib/',
             jr: {
                 licenseSN: this.licenseSN,
-                licenseKey: this.licenseKey
+                licenseKey: this.licenseKey,
+                fontPath: this.fontPath,
             }
         },
         renderTo: '#ngx-foxit-pdf-ui',
