@@ -5,7 +5,7 @@ This is Foxit pdf web sdk for Angular.
 npm install ngx-foxitpdfsdkforweb --save
 
 ## Setup
-1 modify your angular.json
+1 Modify your angular.json
 ```
 "assets": [
   ...,
@@ -13,7 +13,7 @@ npm install ngx-foxitpdfsdkforweb --save
 ],
 ```
 
-2 modify your tsconfig.json
+2 Modify your tsconfig.json
 ```
 "files": [
   ...
@@ -21,7 +21,7 @@ npm install ngx-foxitpdfsdkforweb --save
 ],
 ```
 
-3 add FoxitWebPDFComponent to app NgModule.
+3 Add FoxitWebPDFComponent to app NgModule.
 ```
 import { FoxitWebPDFComponent } from 'ngx-foxitpdfsdkforweb';
 
@@ -33,7 +33,7 @@ import { FoxitWebPDFComponent } from 'ngx-foxitpdfsdkforweb';
   ...
 })
 ```
-4 copy license-key.js to folder src/app and import.
+4 Copy license-key.js to folder src/app and import.
 ```
 import { licenseSN, licenseKey} from './license-key';
 ```
