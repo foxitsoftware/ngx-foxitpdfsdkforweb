@@ -47,7 +47,7 @@ export class FoxitWebPDFComponent {
         ]
     });
     this.pdfui = pdfui;
-    
+    window.pdfui = pdfui;
     window.onresize = function () {
         pdfui.redraw();
     }

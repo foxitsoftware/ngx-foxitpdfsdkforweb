@@ -1,9 +1,0 @@
-{
-    "buttons": {
-        "eraser": "Eraser",
-        "show-dialog": "Show dialog"
-    },
-    "dialog": {
-        "title": "dialog title"
-    }
-}
