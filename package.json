@@ -1,6 +1,6 @@
 {
     "name": "ngx-foxitpdfsdkforweb",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "foxitpdfsdkforweb",
     "main": "foxitWebPDFComponent.ts",
     "files": [
