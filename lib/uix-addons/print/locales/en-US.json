@@ -14,7 +14,11 @@
             "comments": "Comments",
             "printComments": "Print comments"
         },
-        "printProcess": "In print"
+        "printProcess": "In print",
+        "unsupported": {
+            "title": "Prompt",
+            "message": "Your current browser doesn't support printing."
+        }
     },
     "button-tooltip": {
         "title": "Print"

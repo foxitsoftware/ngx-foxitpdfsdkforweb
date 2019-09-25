@@ -5,5 +5,9 @@
             "zh-CN": "./locales/zh-CN.json",
             "en-US": "./locales/en-US.json"
         }
-    }
+    },
+    "css": [
+        "./index.css"
+    ],
+    "depends": ["../edit-graphics"]
 }

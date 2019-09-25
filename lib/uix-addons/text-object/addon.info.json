@@ -110,5 +110,6 @@
             "style": 458863,
             "charset": 129
         }
-    ]
+    ],
+    "depends": ["../edit-graphics"]
 }
