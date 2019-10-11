@@ -14,7 +14,11 @@
             "comments": "注释",
             "printComments": "打印注释"
         },
-        "printProcess": "正在打印中"
+        "printProcess": "正在打印中",
+        "unsupported": {
+            "title": "提示",
+            "message": "您当前的浏览器不支持打印功能。"
+        }
     },
     "button-tooltip": {
         "title": "打印"
