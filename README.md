@@ -1,15 +1,15 @@
-# ngx-foxitpdfsdkforweb
+# @foxitsoftware/angular-foxitpdfsdkforweb
 This is Foxit pdf web sdk for Angular.
 
 ## Install
-npm install ngx-foxitpdfsdkforweb --save
+npm install @foxitsoftware/angular-foxitpdfsdkforweb --save
 
 ## Setup
 1 Modify your angular.json
 ```
 "assets": [
   ...,
-  {"glob": "**/*", "input": "./node_modules/ngx-foxitpdfsdkforweb/lib", "output": "/node_modules/ngx-foxitpdfsdkforweb/lib"}
+  {"glob": "**/*", "input": "./node_modules/@foxitsoftware/angular-foxitpdfsdkforweb/lib", "output": "/node_modules/@foxitsoftware/angular-foxitpdfsdkforweb/lib"}
 ],
 ```
 
@@ -17,13 +17,13 @@ npm install ngx-foxitpdfsdkforweb --save
 ```
 "files": [
   ...
-  "node_modules/ngx-foxitpdfsdkforweb/foxitWebPDFComponent.ts"
+  "node_modules/@foxitsoftware/angular-foxitpdfsdkforweb/foxitWebPDFComponent.ts"
 ],
 ```
 
 3 Add FoxitWebPDFComponent to app NgModule.
 ```
-import { FoxitWebPDFComponent } from 'ngx-foxitpdfsdkforweb';
+import { FoxitWebPDFComponent } from '@foxitsoftware/angular-foxitpdfsdkforweb';
 
 @NgModule({
   declarations: [
@@ -62,7 +62,7 @@ import { licenseSN, licenseKey} from './license-key';
 ```
 import { Component, Input, ViewChild } from '@angular/core';
 import { licenseSN, licenseKey} from './license-key';
-import { FoxitWebPDFComponent } from 'ngx-foxitpdfsdkforweb';
+import { FoxitWebPDFComponent } from '@foxitsoftware/angular-foxitpdfsdkforweb';
 
 export class AppComponent {
   @ViewChild('foxitWebPDF', {static: false}) foxitWebPDF:FoxitWebPDFComponent; 
