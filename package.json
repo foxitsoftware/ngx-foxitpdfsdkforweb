@@ -10,6 +10,6 @@
         "index.html"
     ],
     "devDependencies": {
-        "@angular/core": "~4.0.0"
+        "@angular/core": "~10.2.5"
     }
 }
